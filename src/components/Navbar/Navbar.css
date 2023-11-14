@@ -1,0 +1,207 @@
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+
+.navbar {
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1%;
+  margin: 0 3%;
+}
+
+.menubar {
+  display: none;
+}
+
+.navlogo {
+  width: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 40px;
+  width: 120px;
+}
+
+.search-box {
+  margin-left: 2rem;
+  width: 100%;
+  height: 4.2rem;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.search-box input {
+  width: 100%;
+  height: 100%;
+  font-size: 1.8rem;
+  font-weight: 500;
+  background-color: #fff;
+  padding: 0 1.2rem;
+  /* border: transparent;
+    overflow: hidden; */
+  border-radius: 0.5rem;
+}
+
+.navmenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 47%;
+  height: 4rem;
+}
+
+.box-navit {
+  padding: 0.5rem;
+  height: 4rem;
+}
+
+.box-navit a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+}
+
+.box-navit a img {
+  width: 2.7rem;
+  height: 2.7rem;
+}
+
+.text {
+  margin-left: 1rem;
+}
+
+.text .txmain {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.text .txsec {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.hide-it {
+  display: none;
+}
+
+.search-ic {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .navlogo {
+    width: 40%;
+  }
+
+  .navmenu {
+    width: 56%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    height: 5.7rem;
+  }
+
+  .navbar {
+    margin: 0 8%;
+    padding: 0 2%;
+  }
+
+  .menubar {
+    display: initial;
+  }
+
+  .search-ic {
+    display: initial;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .navmenu {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    width: 100%;
+    height: 7rem;
+    padding: 1rem 0;
+  }
+
+  .box-navit {
+    width: 14rem;
+    height: 5.5rem;
+  }
+
+  .box-navit a {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .box-navit a img {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .text .txmain {
+    font-size: 1.3rem;
+    font-weight: 200;
+  }
+
+  .text .txsec {
+    display: none;
+  }
+
+  .hide-it {
+    display: initial;
+  }
+
+  .search-box.show-search {
+    margin: 2rem;
+    padding: 2rem;
+    width: 70%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: none;
+    position: absolute;
+    top: -1%;
+    left: 12%;
+    box-shadow: 0 .5rem 2rem 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    margin: 0 2%;
+  }
+
+  .search-box.show-search {
+    width: 75%;
+    margin: 2rem 0;
+    z-index: 1;
+  }
+}
